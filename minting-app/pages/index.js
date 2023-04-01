@@ -9,7 +9,7 @@ import {
 export default function NFTCollectionView() {
   // Get the NFT collection using its contract address
   const { contract } = useContract(
-    "0xF9196bd1b6DD684DfF8cBaE465AE3CE0b1Ed6d61"
+    "0x933771f3bABB03a29a2AC79ED015748Edbe8973B"
   );
 
   // Load all the NFTs from the collection (with a loading flag)
@@ -38,7 +38,7 @@ export default function NFTCollectionView() {
 
       {/* Here's where we put the next section (the mint button) */}
       <Web3Button
-        contractAddress="0xF9196bd1b6DD684DfF8cBaE465AE3CE0b1Ed6d61"
+        contractAddress="0x933771f3bABB03a29a2AC79ED015748Edbe8973B"
         action={(contract) => {
           contract.erc721.mint({
             name: "My Nft",
